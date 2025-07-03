@@ -29,7 +29,7 @@ int main()
 
     solution so;
     so.add_list(data);
-    cout<<"test"<<endl;
+    
     return 0;
 
 }
