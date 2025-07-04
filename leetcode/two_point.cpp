@@ -2,9 +2,12 @@
 #include <vector>
 using namespace std;
 
-class TwoPoint{//27.移除数据
+//双指针法，力扣26，27
+
+
+class TwoPoint{//双指针法
 public:
-    int removeElement(vector<int>& nums, int val) {//自己写的，时间复杂度O（n）
+    int removeElement(vector<int>& nums, int val) {//27.移除元素，自己写的，时间复杂度O（n）
         if (nums.empty()) return 0; // 处理空数组
         
         auto begin_ = nums.begin();
@@ -23,11 +26,10 @@ public:
                 begin_++; // 左指针右移
             }
         }
-        
         return begin_ - nums.begin(); // 计算有效长度
     }
    
-    int twoPointers(vector<int>& nums,int val) {//双指针法
+    int twoPointers(vector<int>& nums,int val) {//27.移除元素
         int num = nums.size();
         int slowPoint = 0;
         for (int fastPoint = 0; fastPoint < num; fastPoint++) {
@@ -38,15 +40,11 @@ public:
         }
         return slowPoint;
     }
-};
 
-void demo () {
-    TwoPoint temp;
-    vector<int> vec = {1, 2, 3, 4, 5, 6};
-    int index = temp.twoPointers(vec, 5);
-    
-    cout << "index=" << index << endl;
-}
+    int removeDuplicates(vector<int>& nums) {//26.删除有序数组中的重复项
+        
+    }
+};
 
 int main ()
 {
