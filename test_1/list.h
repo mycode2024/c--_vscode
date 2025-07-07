@@ -1,5 +1,6 @@
 #pragma once
 #include <vector>
+#include <memory>
 #include <iostream>
 using namespace std;
 
@@ -18,5 +19,18 @@ public:
     void list_insert(Node* head, int val, int index);
     //3.链表遍历
     void list_print(Node* head);
+    //4.链表销毁
+    void list_destory(Node*& head);
 
+};
+
+class Bubble_Sort {
+public:
+    void solution(vector<int>& arr);
+
+    void print_info(const vector<int> arr) {
+        for (int i = 0; i < arr.size(); i++) {
+            cout  << arr[i] << " ";
+        }
+    }
 };

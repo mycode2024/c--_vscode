@@ -1,5 +1,5 @@
 #include "list.h"
-#include <memory>
+
 //包含空头结点的链表
 Node *List::create_list(vector<int>& arr)
 {
@@ -30,18 +30,45 @@ void List::list_insert(Node* head, int val, int index)
         temp_node->next = node;
     } else {
         cout << "插入位置无效" << endl;
-
     }
 }
 
 void List::list_print(Node *head)
 {
-    Node* point_ = head->next;
-    while (point_ != nullptr)
-    {
-        cout << point_->val << "->" ;
-        point_ = point_->next;
+    if (head == nullptr) {
+        cout << "链表无数据" <<endl;
+    } else {
+        Node* point_ = head->next;
+        while (point_ != nullptr)
+        {
+            cout << point_->val << "->" ;
+            point_ = point_->next;
+        }
+        cout << "nullptr" <<endl;
+    } 
+}
+
+void List::list_destory(Node*& head)
+{
+    Node* pre_node = head;
+    Node* next_node = (head)->next;
+    while (pre_node != nullptr && next_node != nullptr) {
+        delete pre_node;
+        pre_node = next_node;
+        next_node = next_node->next;
     }
-    cout << "nullptr" <<endl;
-    
+    delete pre_node;
+    head = nullptr;
+}
+
+void Bubble_Sort::solution(vector<int> &arr)
+{
+    int num = arr.size();
+    for (int i = 1; i< num; i++) {
+        for (int j = i; j < num; j++) {
+            if (arr[j - 1] > arr[j]) {
+                swap(arr[j - 1], arr[j]);
+            } 
+        }
+    }
 }

@@ -145,11 +145,11 @@ void printList(ListNode* head) {
     }
     cout << "nullptr" << endl;
 }
-int main ()
-{
-    TwoPoint twoPoint;
-    vector<int> arr = {5,1,3,5,10,7,4,9,2,8};
-    int length = twoPoint.minSubArrayLen(15,arr);
-    cout << "length = " << length << endl;
-    return 0;
-}
+// int main ()
+// {
+//     TwoPoint twoPoint;
+//     vector<int> arr = {5,1,3,5,10,7,4,9,2,8};
+//     int length = twoPoint.minSubArrayLen(15,arr);
+//     cout << "length = " << length << endl;
+//     return 0;
+// }
