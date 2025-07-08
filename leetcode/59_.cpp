@@ -40,7 +40,7 @@ public:
 };
 
 
-int main () {
-    _59 temp;
-    temp.generateMatrix(4);
-}
+// int main () {
+//     _59 temp;
+//     temp.generateMatrix(4);
+// }

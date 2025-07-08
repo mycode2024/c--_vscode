@@ -7,4 +7,4 @@ int main()
     cout << a.add() << endl;
     cout << "Hello World!" << endl;
     return 0;
-}       
+} 
