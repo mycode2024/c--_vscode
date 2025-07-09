@@ -1,6 +1,6 @@
-// #include <iostream>
-// #include <vector>
-// using namespace std;
+#include <iostream>
+#include <vector>
+using namespace std;
 
 
 
@@ -32,10 +32,3 @@
 //     return 0;
 // }
 
-#include <bits/stdc++.h>
-using namespace std;
-int main()
-{
-    cout << "hello world";
-    return 0;
-}

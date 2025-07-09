@@ -69,9 +69,9 @@ public:
 };
 
 
-int main () {
+// int main () {
 
-    Interval_sum sum;
-    sum.solution();
-    return 0;
-}
+//     Interval_sum sum;
+//     sum.solution();
+//     return 0;
+// }
