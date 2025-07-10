@@ -1,9 +1,13 @@
+//704. 二分查找
+//https://leetcode.cn/problems/binary-search/description/
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
-class BinarySearch{
+class Binary_search{
 public:
+    //左闭右闭写法
     int search(vector<int>& vec,int target) {//自己写的，时间复杂度O（n）
 
         int left = 0;
@@ -26,7 +30,3 @@ public:
 
 };
 
-// int main ()
-// {
-//     return 0;
-// }

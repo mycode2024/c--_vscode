@@ -1,9 +1,10 @@
+//977. 有序数组的平方
+//https://leetcode.cn/problems/squares-of-a-sorted-array/description/
+
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
-//977. 有序数组的平方
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
@@ -23,6 +24,7 @@ public:
         }
         return new_vec;
     }
+    
     void demo() {
         Solution solution;
         vector<int> vec = {-5, 1, 2, 3, 10};

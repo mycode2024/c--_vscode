@@ -1,11 +1,14 @@
+//59. 螺旋矩阵 II
+//https://leetcode.cn/problems/spiral-matrix-ii/description/
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
-class _59{
+class Spiral_martrix{
 public:
     vector<vector<int>> generateMatrix(int n) {
-    vector<vector<int>> matrix(n, vector<int>(n,0));  // 初始化 n×n 矩阵
+        vector<vector<int>> matrix(n, vector<int>(n,0));  // 初始化 n×n 矩阵
         int startX = 0;
         int startY = 0;
         int count = 1;
@@ -38,9 +41,3 @@ public:
         return matrix;
     }
 };
-
-
-// int main () {
-//     _59 temp;
-//     temp.generateMatrix(4);
-// }

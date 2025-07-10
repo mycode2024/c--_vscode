@@ -1,3 +1,6 @@
+//58. 区间和
+//https://kamacoder.com/problempage.php?pid=1070
+
 #include <iostream>
 #include <vector>
 #include <sstream>
@@ -67,11 +70,3 @@ public:
         }
     }
 };
-
-
-// int main () {
-
-//     Interval_sum sum;
-//     sum.solution();
-//     return 0;
-// }
